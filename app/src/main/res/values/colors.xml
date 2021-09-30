@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_orange_color">#FF740A</color>
+    <color name="primary_font_color">#FFFFFF</color>
+    <color name="secondary_font_color">#4F5F75</color>
+    <color name="tertiary_font_color">#EF8354</color>
+    <color name="search_hint_text_color">#C8C8C8</color>
+</resources>

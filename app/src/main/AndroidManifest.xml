@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.husni.muyah">
+<!--Start-->
+<!--TTS FOR Android 11 Manifest-->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+    </queries>
+<!--End-->
+    <application
+        android:name="id.husni.muyah.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KamsiaAppKamusIndonesiaArab">
+        <activity
+            android:name="id.husni.muyah.ui.hospital.HospitalActivity"
+            android:exported="true" />
+        <activity
+            android:name="id.husni.muyah.ui.market.MarketActivity"
+            android:exported="true" />
+        <activity
+            android:name="id.husni.muyah.ui.campus.CampusActivity"
+            android:exported="true" />
+        <activity
+            android:name="id.husni.muyah.ui.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="id.husni.muyah.ui.office.OfficeActivity"
+            android:exported="true" />
+        <activity
+            android:name="id.husni.muyah.ui.main.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

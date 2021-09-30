@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KamsiaAppKamusIndonesiaArab" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/main_orange_color</item>
+    </style>
+    <!--label main text style-->
+    <style name="label_main_title_text" parent="Theme.KamsiaAppKamusIndonesiaArab">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+    </style>
+    <!--sub label main text style-->
+    <style name="sub_label_main_title_text" parent="Theme.KamsiaAppKamusIndonesiaArab">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+    </style>
+    <!--search label text style-->
+    <style name="search_label_text" parent="Theme.KamsiaAppKamusIndonesiaArab">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+    </style>
+    <!--sub title style-->
+    <style name="sub_title_text" parent="Theme.KamsiaAppKamusIndonesiaArab">
+        <item name="android:textColor">@color/secondary_font_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+    </style>
+    <!--category text style-->
+    <style name="category_text" parent="Theme.KamsiaAppKamusIndonesiaArab">
+        <item name="android:textColor">@color/main_orange_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <!--detail text toolbar style-->
+    <style name="detail_text_toolbar" parent="Theme.KamsiaAppKamusIndonesiaArab">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--item holder text style part 1-->
+    <style name="item_holder_text_style_1" parent="Theme.KamsiaAppKamusIndonesiaArab">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+    </style>
+    <!--item holder text style part 2-->
+    <style name="item_holder_text_style_2" parent="Theme.KamsiaAppKamusIndonesiaArab">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+    </style>
+</resources>
