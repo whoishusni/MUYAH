@@ -9,10 +9,10 @@ package id.husni.muyah.ui.campus
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import id.husni.muyah.data.source.KamsiaRepository
+import id.husni.muyah.data.source.MuyahRepository
 import id.husni.muyah.data.source.local.entity.Campus
 
-class CampusViewModel(private val kamsiaRepository: KamsiaRepository): ViewModel() {
-    suspend fun insertCampus(list: List<Campus>) = kamsiaRepository.insertCampus(list)
-    fun getAllCampus(): LiveData<List<Campus>> = kamsiaRepository.getAllCampus()
+class CampusViewModel(private val muyahRepository: MuyahRepository): ViewModel() {
+    suspend fun insertCampus(list: List<Campus>) = muyahRepository.insertCampus(list)
+    fun getAllCampus(): LiveData<List<Campus>> = muyahRepository.getAllCampus()
 }

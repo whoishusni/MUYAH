@@ -9,10 +9,10 @@ package id.husni.muyah.ui.market
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import id.husni.muyah.data.source.KamsiaRepository
+import id.husni.muyah.data.source.MuyahRepository
 import id.husni.muyah.data.source.local.entity.Market
 
-class MarketViewModel(private val kamsiaRepository: KamsiaRepository): ViewModel()  {
-    suspend fun insertMarket(list: List<Market>) = kamsiaRepository.insertMarket(list)
-    fun getAllMarket(): LiveData<List<Market>> = kamsiaRepository.getAllMarket()
+class MarketViewModel(private val muyahRepository: MuyahRepository): ViewModel()  {
+    suspend fun insertMarket(list: List<Market>) = muyahRepository.insertMarket(list)
+    fun getAllMarket(): LiveData<List<Market>> = muyahRepository.getAllMarket()
 }

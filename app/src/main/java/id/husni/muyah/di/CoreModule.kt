@@ -8,7 +8,7 @@
 package id.husni.muyah.di
 
 import androidx.room.Room
-import id.husni.muyah.data.source.KamsiaRepository
+import id.husni.muyah.data.source.MuyahRepository
 import id.husni.muyah.data.source.local.LocalDataSource
 import id.husni.muyah.data.source.local.database.MuyahDatabase
 import id.husni.muyah.ui.campus.CampusViewModel
@@ -32,7 +32,7 @@ val dataSourceModule = module {
     single { LocalDataSource(get()) }
 }
 val repositoryModule = module {
-    single { KamsiaRepository(get()) }
+    single { MuyahRepository(get()) }
 }
 
 val viewModelModule = module {

@@ -14,7 +14,7 @@ import id.husni.muyah.data.source.local.entity.Hospital
 import id.husni.muyah.data.source.local.entity.Market
 import id.husni.muyah.data.source.local.entity.Office
 
-class KamsiaRepository(private val localDataSource: LocalDataSource) {
+class MuyahRepository(private val localDataSource: LocalDataSource) {
 
     //office
     suspend fun insertOffice(list: List<Office>) = localDataSource.insertOffice(list)
