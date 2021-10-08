@@ -51,6 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="7dp"
+                android:maxLines="2"
                 android:text="@string/contoh_kata"/>
 
             <TextView
@@ -58,6 +59,8 @@
                 style="@style/item_holder_text_style_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="italic"
                 android:text="@string/arti_kalimat" />
 
             <ImageButton

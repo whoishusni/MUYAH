@@ -23,27 +23,27 @@ interface MuyahDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertOffice(list: List<Office>)
 
-    @Query("SELECT * FROM office_word ORDER BY id ASC")
+    @Query("SELECT * FROM office_word ORDER BY word ASC")
     fun getAllOffice(): LiveData<List<Office>>
 
     //campus word query
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCampus(list: List<Campus>)
 
-    @Query("SELECT * FROM campus_word ORDER BY id ASC")
+    @Query("SELECT * FROM campus_word ORDER BY word ASC")
     fun getAllCampus(): LiveData<List<Campus>>
 
     //market word query
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertMarket(list: List<Market>)
 
-    @Query("SELECT * FROM market_word ORDER BY id ASC")
+    @Query("SELECT * FROM market_word ORDER BY word ASC")
     fun getAllMarket(): LiveData<List<Market>>
 
     //hospital word query
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertHospital(list: List<Hospital>)
 
-    @Query("SELECT * FROM hospital_word ORDER BY id ASC")
+    @Query("SELECT * FROM hospital_word ORDER BY word ASC")
     fun getAllHospital(): LiveData<List<Hospital>>
 }
