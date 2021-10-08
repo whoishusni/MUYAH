@@ -46,7 +46,7 @@ class HospitalAdapter : RecyclerView.Adapter<HospitalAdapter.ViewHolder>() {
 
     class ViewHolder(private val binding: ItemHolderBinding) :
         RecyclerView.ViewHolder(binding.root), TextToSpeech.OnInitListener {
-        var textToSpeech : TextToSpeech? = null
+        private var textToSpeech : TextToSpeech? = null
         fun bind(hospital: Hospital) {
             with(binding) {
                 tvWord.text = hospital.word

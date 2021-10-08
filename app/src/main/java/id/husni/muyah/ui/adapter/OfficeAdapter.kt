@@ -45,7 +45,7 @@ class OfficeAdapter : RecyclerView.Adapter<OfficeAdapter.OfficeViewHolder>() {
 
     class OfficeViewHolder(private val binding: ItemHolderBinding) :
         RecyclerView.ViewHolder(binding.root), TextToSpeech.OnInitListener {
-        var textToSpeech: TextToSpeech? = null
+        private var textToSpeech: TextToSpeech? = null
         fun bind(office: Office) {
             with(binding) {
                 tvWord.text = office.word

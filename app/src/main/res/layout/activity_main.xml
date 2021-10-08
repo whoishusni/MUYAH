@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Created by Moh Husni Mubaraq
   ~ Copyright (c) 2021 . All rights reserved.
   ~ Last Modified, Please Refer to:
@@ -33,11 +32,11 @@
             tools:ignore="ImageContrastCheck" />
 
         <ImageView
-            android:id="@+id/imageView4"
             android:layout_width="74dp"
             android:layout_height="74dp"
             android:layout_marginTop="45dp"
             android:layout_marginEnd="20dp"
+            android:contentDescription="@string/app_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView"
             app:srcCompat="@drawable/ic_carbon_user_avatar_filled"
@@ -123,7 +122,6 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4">
 
             <ImageView
-                android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -168,24 +166,13 @@
                 app:layout_columnWeight="1"
                 app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <TextView
+                    style="@style/category_text"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/kantor"
-                        app:srcCompat="@drawable/ic_office_table" />
-
-                    <TextView
-                        style="@style/category_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/kantor" />
-                </LinearLayout>
+                    android:text="@string/kantor"
+                    app:drawableTopCompat="@drawable/ic_office_table" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -200,24 +187,13 @@
                 app:layout_columnWeight="1"
                 app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <TextView
+                    style="@style/category_text"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/kantor"
-                        app:srcCompat="@drawable/ic_campus" />
-
-                    <TextView
-                        style="@style/category_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/kampus" />
-                </LinearLayout>
+                    android:text="@string/kampus"
+                    app:drawableTopCompat="@drawable/ic_campus" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -225,32 +201,21 @@
                 android:layout_width="76dp"
                 android:layout_height="76dp"
                 android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
                 android:clickable="true"
                 android:focusable="true"
                 app:cardCornerRadius="7dp"
                 app:cardElevation="6dp"
-                android:layout_marginBottom="10dp"
                 app:layout_columnWeight="1"
                 app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <TextView
+                    style="@style/category_text"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/kantor"
-                        app:srcCompat="@drawable/ic_market" />
-
-                    <TextView
-                        style="@style/category_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/pasar" />
-                </LinearLayout>
+                    android:text="@string/pasar"
+                    app:drawableTopCompat="@drawable/ic_market" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -258,34 +223,21 @@
                 android:layout_width="76dp"
                 android:layout_height="76dp"
                 android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:layout_marginBottom="10dp"
                 app:cardCornerRadius="7dp"
                 app:cardElevation="6dp"
                 app:layout_columnWeight="1"
                 app:layout_rowWeight="1">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <TextView
+                    style="@style/category_text"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/kantor"
-                        app:srcCompat="@drawable/ic_hospital" />
-
-                    <TextView
-                        android:id="@+id/textView9"
-                        style="@style/category_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/rumah_sakit_ext" />
-                </LinearLayout>
+                    android:text="@string/rumah_sakit"
+                    app:drawableTopCompat="@drawable/ic_hospital" />
             </androidx.cardview.widget.CardView>
 
         </androidx.gridlayout.widget.GridLayout>
@@ -302,7 +254,6 @@
             tools:ignore="TextContrastCheck" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cvOnlineCourse"
             android:layout_width="match_parent"
             android:layout_height="102dp"
             android:layout_marginStart="20dp"
@@ -318,10 +269,10 @@
             app:layout_constraintTop_toBottomOf="@+id/textView10">
 
             <ImageView
-                android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/online_course_daftar" />
         </androidx.cardview.widget.CardView>

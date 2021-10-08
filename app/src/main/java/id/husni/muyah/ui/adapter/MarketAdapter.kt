@@ -46,7 +46,7 @@ class MarketAdapter : RecyclerView.Adapter<MarketAdapter.ViewHolder>() {
 
     class ViewHolder(private val binding: ItemHolderBinding) :
         RecyclerView.ViewHolder(binding.root), TextToSpeech.OnInitListener {
-        var textToSpeech: TextToSpeech? = null
+        private var textToSpeech: TextToSpeech? = null
         fun bind(market: Market) {
             with(binding) {
                 tvWord.text = market.word

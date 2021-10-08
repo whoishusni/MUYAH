@@ -9,7 +9,6 @@
     <string name="kategori_kata">Kategori Kata</string>
     <string name="kampus">Kampus</string>
     <string name="pasar">Pasar</string>
-    <string name="rumah_sakit">RS</string>
     <string name="online_course">Kursus Online</string>
     <string name="imagebaca">imageBaca</string>
     <string name="kantor">Kantor</string>
@@ -18,6 +17,6 @@
     <string name="contoh_kata">Contoh Kata</string>
     <string name="arti_kalimat">Arti Kalimat</string>
     <string name="image_sound">image_sound</string>
-    <string name="rumah_sakit_ext">Rumah Sakit</string>
+    <string name="rumah_sakit">Rumah Sakit</string>
     <string name="error_lang">Error: Arabic Language not Supported</string>
 </resources>
