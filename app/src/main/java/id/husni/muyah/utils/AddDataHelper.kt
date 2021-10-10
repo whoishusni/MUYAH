@@ -722,10 +722,226 @@ object AddDataHelper {
         listHospital.add(
             Hospital(
                 1,
-                "Saya",
-                "أنا",
-                "أذهب إلى المستشفى",
-                "Saya Pergi Ke Rumah Sakit"
+                "Alkohol",
+                "كُحُولٌ",
+                "الطَّبِيبُ يُعطِينِي الكُحُول",
+                "Dokter itu memberikanku Alkohol"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                2,
+                "Apotek",
+                "صَيدَلِيَّةٌ",
+                "الصَيدَلِيُّ يَعمَلُ  في الصَيدَلِيَّةِ",
+                "Apoteker itu bekerja di Apotek"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                3,
+                "Apoteker",
+                "صَيدَلِيٌّ",
+                "ذَهَبَ الصَيدَلِيُّ إِلَى الصَيدَلِيَّةِ",
+                "Apoteker itu pergi ke Apotek"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                4,
+                "Bangsal Rumah Sakit",
+                "جَنَاحٌ المُستَشفَى ",
+                "زُرتُ إِلَى جَنَاحِ المُستَشفَى ",
+                "Aku telah mengunjungi Bangsal Rumah Sakit"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                5,
+                "Batuk",
+                "سُعَالٌ",
+                "لِمَاذَ أَصَابَهُ السُّعَال ؟",
+                "Mengapa dia batuk?"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                6,
+                "Berdarah",
+                "نَزِيفٌ",
+                "سَاعِدنِي، رَأسِي نَزِيفٌ",
+                "Tolong Aku, Kepalaku berdarah"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                7,
+                "Bidan",
+                "قَابِلَةٌ",
+                " القَابِلَةُ تُسَاعِدُ الوِلَادَةَ",
+                "Bidan itu membantu persalinan"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                8,
+                "Demam",
+                "حُمَّى",
+                "أَصَابَنِي الحُمَّى",
+                "Aku terkena Demam"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                9,
+                "Diare",
+                "إِسهَالٌ",
+                "هَل أَصَابَكِ الإِسهَال ؟",
+                "Apakah kamu terserang Diare?"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                10,
+                "Dokter",
+                "طَبِيبٌ \\ طَبِيبَةٌ",
+                "الطَّبِيبُ يَفحَصُ المَرضَى",
+                "Dokter itu memeriksa Pasien"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                11,
+                "Dokter Gigi",
+                "طَبِيبُ الأَسنَانِ",
+                "أَنَا أَخَافُ إِلَى طَبِيبِ الأَسنَانِ",
+                "Aku takut pergi ke Dokter Gigi"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                12,
+                "Dokter THT",
+                "طَبِيبُ الْأَنفِ وَ الْأُذُنِ وَالْحَنجَرَةِ",
+                "لاَزِم أَن تَذهَبَ إِلَى طَبِيبِ الْأَنفِ وَ الْأُذُنِ وَالْحَنجَرَةِ",
+                "Kamu harus pergi ke Dokter THT"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                13,
+                "Dosis Obat",
+                "جَرعَةٌ",
+                "كَم جَرعَةً لِهذِهِ الدَّوَاءِ ؟",
+                "Berapakah Dosis obat ini?"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                14,
+                "Flu",
+                "زُكَّامٌ",
+                "أَعرَاضُ الكُورُونَا الزُّكَّامُ وَ السُعَالُ",
+                "Gejala Covid-19 yaitu Flu dan Batuk"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                15,
+                "Infus",
+                "تَسرِيبٌ",
+                "هُوَ يَحتَاجُ التَّسرِيبَ",
+                "Dia membutuhkan Infus"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                16,
+                "Kain kasa",
+                "شَاش",
+                "هَل عِندَكَ الشَّاش؟",
+                "Apakah kamu memilili Kain Kasa?"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                17,
+                "Kanker Paru",
+                "سَرَطَانُ الرِّئَةِ",
+                " أَبَي يَمُوتُ بَعدَ أَصَابَهُ سَرَطَان الرِّئَةِ",
+                "Ayahku wafat setelah terkena Kanker Paru-paru"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                18,
+                "Kapas",
+                "قُطنٌ",
+                "لِي قُطنٌ ثَخِينٌ",
+                "Aku memiliki Kapas yang tebal"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                19,
+                "Kencing Manis",
+                "السُّكَّرِيُّ",
+                "إِيَاكَ أَنِ السُّكَّرِيَّ !",
+                "Waspadalah terhadap penyakit kencing Manis"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                20,
+                "Keracunan\n",
+                "تَسَمُّمٌ",
+                "أَصَابَهُم تَسَمُّم الطًّعَامِ",
+                "Meraka terkena keracunan Makanan"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                21,
+                "Kotak Obat/P3K",
+                "صُندُوْقُ الإِسعَافِ",
+                "لاَزِم أَن تَحمِلَ صُندُوْق الإِسعَافِ حَيثُ مَا كُنتَ",
+                "Kamu harus selalu membawa Kotak Obat/P3K di manapun kamu berada"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                22,
+                "Labolatorium",
+                "مُختَبَرٌ",
+                "المُختَبَرُ كَبِيرٌ",
+                "Laboratorium itu Besar"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                23,
+                "Luka",
+                "جُرحٌ",
+                "كَيفَ يُعَالِجُ جُرحِي ؟",
+                "Bagaimana Dia akan mengobati Lukaku?"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                24,
+                "Malaria",
+                "مَلَاريَا",
+                "انتَشَرَ المَلَاريَا إِلىَ الوِلاَيَاتِ",
+                "Penyakit Malaria menyebar ke berbagai Wilayah"
+            )
+        )
+        listHospital.add(
+            Hospital(
+                25,
+                "Masker",
+                "كِمَامَةٌ",
+                "النَّاسُ يَحتَاجُونَ الكِمَامَةَ فِي عَصرِ الجَائِحَةِ",
+                "Semua orang membutuhkan Masker pada Masa Pandemi"
             )
         )
         return listHospital

@@ -10,6 +10,7 @@ package id.husni.muyah.ui.main
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import id.husni.muyah.R
 import id.husni.muyah.databinding.ActivityMainBinding
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.cvPopularCat.setOnClickListener {
+            Toast.makeText(this,getString(R.string.feature_not_available), Toast.LENGTH_SHORT).show()
+        }
 
         binding.cvOffice.setOnClickListener(this)
         binding.cvCampus.setOnClickListener(this)
