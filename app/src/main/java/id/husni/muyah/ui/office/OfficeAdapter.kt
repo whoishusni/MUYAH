@@ -5,7 +5,7 @@
  * https://github.com/whoishusni/MUYAH/commits/main
  */
 
-package id.husni.muyah.ui.adapter
+package id.husni.muyah.ui.office
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,45 +15,44 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import id.husni.muyah.R
-import id.husni.muyah.data.source.local.entity.Hospital
+import id.husni.muyah.data.source.local.entity.Office
 import id.husni.muyah.databinding.ItemHolderBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
-class HospitalAdapter : RecyclerView.Adapter<HospitalAdapter.ViewHolder>() {
-    private val listItem = ArrayList<Hospital>()
-
+class OfficeAdapter : RecyclerView.Adapter<OfficeAdapter.OfficeViewHolder>() {
+    private val list = ArrayList<Office>()
     @SuppressLint("NotifyDataSetChanged")
-    fun setHospitalData(items: List<Hospital>) {
+    fun setOfficeData(items: List<Office>) {
         if (items.isNullOrEmpty()) return
-        listItem.clear()
-        listItem.addAll(items)
+        list.clear()
+        list.addAll(items)
         notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OfficeViewHolder {
         val view = ItemHolderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return ViewHolder(view)
+        return OfficeViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(listItem[position])
+    override fun onBindViewHolder(holder: OfficeViewHolder, position: Int) {
+        holder.bind(list[position])
     }
 
     override fun getItemCount(): Int {
-        return listItem.size
+        return list.size
     }
 
-    class ViewHolder(private val binding: ItemHolderBinding) :
+    class OfficeViewHolder(private val binding: ItemHolderBinding) :
         RecyclerView.ViewHolder(binding.root), TextToSpeech.OnInitListener {
-        private var textToSpeech : TextToSpeech? = null
-        fun bind(hospital: Hospital) {
+        private var textToSpeech: TextToSpeech? = null
+        fun bind(office: Office) {
             with(binding) {
-                tvWord.text = hospital.word
-                tvMean.text = hospital.meaning
-                tvSample.text = hospital.example
-                tvSampleMean.text = hospital.exampleMeaning
-                btnSpeak.setOnClickListener {
+                tvWord.text = office.word
+                tvMean.text = office.meaning
+                tvSample.text = office.example
+                tvSampleMean.text = office.exampleMeaning
+                btnSpeak.setOnClickListener{
                     speak(binding.root.context)
                 }
             }
@@ -64,11 +63,15 @@ class HospitalAdapter : RecyclerView.Adapter<HospitalAdapter.ViewHolder>() {
         }
 
         override fun onInit(status: Int) {
+            //TODO : Fix TTS ARAB dilain Waktu
             val localeArabic = Locale("ar","SA")
             if (status == TextToSpeech.SUCCESS) {
                 val result = textToSpeech?.setLanguage(localeArabic)
                 if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                     Toast.makeText(binding.root.context, binding.root.context.getString(R.string.error_lang), Toast.LENGTH_SHORT).show()
+                }
+                else{
+                    textToSpeech?.speak(binding.tvMean.text.toString(), TextToSpeech.QUEUE_FLUSH, null,null)
                 }
             }
         }

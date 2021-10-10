@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import id.husni.muyah.databinding.ActivityHospitalBinding
-import id.husni.muyah.ui.adapter.HospitalAdapter
 import id.husni.muyah.utils.AddDataHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

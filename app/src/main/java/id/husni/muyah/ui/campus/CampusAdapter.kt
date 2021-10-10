@@ -5,7 +5,7 @@
  * https://github.com/whoishusni/MUYAH/commits/main
  */
 
-package id.husni.muyah.ui.adapter
+package id.husni.muyah.ui.campus
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,27 +15,28 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import id.husni.muyah.R
-import id.husni.muyah.data.source.local.entity.Office
+import id.husni.muyah.data.source.local.entity.Campus
 import id.husni.muyah.databinding.ItemHolderBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
-class OfficeAdapter : RecyclerView.Adapter<OfficeAdapter.OfficeViewHolder>() {
-    private val list = ArrayList<Office>()
+class CampusAdapter : RecyclerView.Adapter<CampusAdapter.ViewHolder>() {
+    private val list = ArrayList<Campus>()
+
     @SuppressLint("NotifyDataSetChanged")
-    fun setOfficeData(items: List<Office>) {
+    fun setCampusData(items: List<Campus>) {
         if (items.isNullOrEmpty()) return
         list.clear()
         list.addAll(items)
         notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OfficeViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = ItemHolderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return OfficeViewHolder(view)
+        return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: OfficeViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(list[position])
     }
 
@@ -43,16 +44,16 @@ class OfficeAdapter : RecyclerView.Adapter<OfficeAdapter.OfficeViewHolder>() {
         return list.size
     }
 
-    class OfficeViewHolder(private val binding: ItemHolderBinding) :
+    class ViewHolder(private val binding: ItemHolderBinding) :
         RecyclerView.ViewHolder(binding.root), TextToSpeech.OnInitListener {
         private var textToSpeech: TextToSpeech? = null
-        fun bind(office: Office) {
+        fun bind(campus: Campus) {
             with(binding) {
-                tvWord.text = office.word
-                tvMean.text = office.meaning
-                tvSample.text = office.example
-                tvSampleMean.text = office.exampleMeaning
-                btnSpeak.setOnClickListener{
+                tvWord.text = campus.word
+                tvMean.text = campus.meaning
+                tvSample.text = campus.example
+                tvSampleMean.text = campus.exampleMeaning
+                btnSpeak.setOnClickListener {
                     speak(binding.root.context)
                 }
             }
@@ -63,15 +64,11 @@ class OfficeAdapter : RecyclerView.Adapter<OfficeAdapter.OfficeViewHolder>() {
         }
 
         override fun onInit(status: Int) {
-            //TODO : Fix TTS ARAB dilain Waktu
             val localeArabic = Locale("ar","SA")
             if (status == TextToSpeech.SUCCESS) {
                 val result = textToSpeech?.setLanguage(localeArabic)
-                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                if (result == TextToSpeech.LANG_NOT_SUPPORTED || result == TextToSpeech.LANG_MISSING_DATA) {
                     Toast.makeText(binding.root.context, binding.root.context.getString(R.string.error_lang), Toast.LENGTH_SHORT).show()
-                }
-                else{
-                    textToSpeech?.speak(binding.tvMean.text.toString(), TextToSpeech.QUEUE_FLUSH, null,null)
                 }
             }
         }

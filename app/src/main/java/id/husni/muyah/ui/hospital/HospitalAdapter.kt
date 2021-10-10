@@ -5,7 +5,7 @@
  * https://github.com/whoishusni/MUYAH/commits/main
  */
 
-package id.husni.muyah.ui.adapter
+package id.husni.muyah.ui.hospital
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,16 +15,16 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import id.husni.muyah.R
-import id.husni.muyah.data.source.local.entity.Market
+import id.husni.muyah.data.source.local.entity.Hospital
 import id.husni.muyah.databinding.ItemHolderBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
-class MarketAdapter : RecyclerView.Adapter<MarketAdapter.ViewHolder>() {
-    private val listItem = ArrayList<Market>()
+class HospitalAdapter : RecyclerView.Adapter<HospitalAdapter.ViewHolder>() {
+    private val listItem = ArrayList<Hospital>()
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setMarketData(items: List<Market>) {
+    fun setHospitalData(items: List<Hospital>) {
         if (items.isNullOrEmpty()) return
         listItem.clear()
         listItem.addAll(items)
@@ -46,13 +46,13 @@ class MarketAdapter : RecyclerView.Adapter<MarketAdapter.ViewHolder>() {
 
     class ViewHolder(private val binding: ItemHolderBinding) :
         RecyclerView.ViewHolder(binding.root), TextToSpeech.OnInitListener {
-        private var textToSpeech: TextToSpeech? = null
-        fun bind(market: Market) {
+        private var textToSpeech : TextToSpeech? = null
+        fun bind(hospital: Hospital) {
             with(binding) {
-                tvWord.text = market.word
-                tvMean.text = market.meaning
-                tvSample.text = market.example
-                tvSampleMean.text = market.exampleMeaning
+                tvWord.text = hospital.word
+                tvMean.text = hospital.meaning
+                tvSample.text = hospital.example
+                tvSampleMean.text = hospital.exampleMeaning
                 btnSpeak.setOnClickListener {
                     speak(binding.root.context)
                 }
@@ -64,10 +64,10 @@ class MarketAdapter : RecyclerView.Adapter<MarketAdapter.ViewHolder>() {
         }
 
         override fun onInit(status: Int) {
-            val localeArabic = Locale("ar", "SA")
+            val localeArabic = Locale("ar","SA")
             if (status == TextToSpeech.SUCCESS) {
                 val result = textToSpeech?.setLanguage(localeArabic)
-                if (result == TextToSpeech.LANG_NOT_SUPPORTED || result == TextToSpeech.LANG_MISSING_DATA) {
+                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                     Toast.makeText(binding.root.context, binding.root.context.getString(R.string.error_lang), Toast.LENGTH_SHORT).show()
                 }
             }

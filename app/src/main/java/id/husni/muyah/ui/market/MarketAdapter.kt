@@ -5,7 +5,7 @@
  * https://github.com/whoishusni/MUYAH/commits/main
  */
 
-package id.husni.muyah.ui.adapter
+package id.husni.muyah.ui.market
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,19 +15,19 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import id.husni.muyah.R
-import id.husni.muyah.data.source.local.entity.Campus
+import id.husni.muyah.data.source.local.entity.Market
 import id.husni.muyah.databinding.ItemHolderBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
-class CampusAdapter : RecyclerView.Adapter<CampusAdapter.ViewHolder>() {
-    private val list = ArrayList<Campus>()
+class MarketAdapter : RecyclerView.Adapter<MarketAdapter.ViewHolder>() {
+    private val listItem = ArrayList<Market>()
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setCampusData(items: List<Campus>) {
+    fun setMarketData(items: List<Market>) {
         if (items.isNullOrEmpty()) return
-        list.clear()
-        list.addAll(items)
+        listItem.clear()
+        listItem.addAll(items)
         notifyDataSetChanged()
     }
 
@@ -37,22 +37,22 @@ class CampusAdapter : RecyclerView.Adapter<CampusAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(list[position])
+        holder.bind(listItem[position])
     }
 
     override fun getItemCount(): Int {
-        return list.size
+        return listItem.size
     }
 
     class ViewHolder(private val binding: ItemHolderBinding) :
         RecyclerView.ViewHolder(binding.root), TextToSpeech.OnInitListener {
         private var textToSpeech: TextToSpeech? = null
-        fun bind(campus: Campus) {
+        fun bind(market: Market) {
             with(binding) {
-                tvWord.text = campus.word
-                tvMean.text = campus.meaning
-                tvSample.text = campus.example
-                tvSampleMean.text = campus.exampleMeaning
+                tvWord.text = market.word
+                tvMean.text = market.meaning
+                tvSample.text = market.example
+                tvSampleMean.text = market.exampleMeaning
                 btnSpeak.setOnClickListener {
                     speak(binding.root.context)
                 }
@@ -64,7 +64,7 @@ class CampusAdapter : RecyclerView.Adapter<CampusAdapter.ViewHolder>() {
         }
 
         override fun onInit(status: Int) {
-            val localeArabic = Locale("ar","SA")
+            val localeArabic = Locale("ar", "SA")
             if (status == TextToSpeech.SUCCESS) {
                 val result = textToSpeech?.setLanguage(localeArabic)
                 if (result == TextToSpeech.LANG_NOT_SUPPORTED || result == TextToSpeech.LANG_MISSING_DATA) {
