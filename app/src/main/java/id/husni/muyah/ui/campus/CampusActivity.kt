@@ -31,7 +31,6 @@ class CampusActivity : AppCompatActivity() {
 
         val adapters = CampusAdapter()
         supportActionBar?.apply {
-            //TODO : Butuh perbaikan / opsi lain untuk hide title
             title = ""
             setDisplayHomeAsUpEnabled(true)
             setHomeButtonEnabled(true)

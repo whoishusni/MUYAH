@@ -29,7 +29,6 @@ class OfficeActivity : AppCompatActivity() {
         val adapters = OfficeAdapter()
 
         supportActionBar?.apply {
-            //TODO : Butuh perbaikan / opsi lain untuk hide title
             title = ""
             setDisplayHomeAsUpEnabled(true)
             setHomeButtonEnabled(true)
@@ -40,7 +39,7 @@ class OfficeActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(context)
             setHasFixedSize(true)
         }
-        //TODO: mau diganti pake coroutine
+
         lifecycleScope.launch {
             withContext(Dispatchers.Main){
                 true.showProgressBar()

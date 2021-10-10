@@ -31,7 +31,6 @@ class HospitalActivity : AppCompatActivity() {
 
         val adapters = HospitalAdapter()
         supportActionBar?.apply {
-            //TODO : Butuh perbaikan / opsi lain untuk hide title
             title = ""
             setDisplayHomeAsUpEnabled(true)
             setHomeButtonEnabled(true)

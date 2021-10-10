@@ -13,6 +13,7 @@ import id.husni.muyah.data.source.local.entity.Office
 
 //BULK INSERT DATA
 object AddDataHelper {
+    //TODO: Office
     fun addOffice(): ArrayList<Office> {
         val listOffice = ArrayList<Office>()
         listOffice.add(
@@ -27,7 +28,7 @@ object AddDataHelper {
         return listOffice
     }
 
-    //campus
+    //TODO: Campus
     fun addCampus(): ArrayList<Campus> {
         val listCampus = ArrayList<Campus>()
         listCampus.add(
@@ -483,7 +484,7 @@ object AddDataHelper {
         return listCampus
     }
 
-    //market
+    // TODO: market
     fun addMarket(): ArrayList<Market> {
         val listMarket = ArrayList<Market>()
         listMarket.add(
@@ -715,7 +716,7 @@ object AddDataHelper {
         return listMarket
     }
 
-    //hospital
+    //TODO: Hospital
     fun addHospital(): ArrayList<Hospital> {
         val listHospital = ArrayList<Hospital>()
         listHospital.add(

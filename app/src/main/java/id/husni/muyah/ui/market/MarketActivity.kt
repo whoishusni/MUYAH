@@ -32,7 +32,6 @@ class MarketActivity : AppCompatActivity() {
         val adapters = MarketAdapter()
 
         supportActionBar?.apply {
-            //TODO : Butuh perbaikan / opsi lain untuk hide title
             title = ""
             setDisplayHomeAsUpEnabled(true)
             setHomeButtonEnabled(true)
