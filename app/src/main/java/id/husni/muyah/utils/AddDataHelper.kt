@@ -19,10 +19,226 @@ object AddDataHelper {
         listOffice.add(
             Office(
                 1,
-                "Alumnus",
-                "خِرِّيجٌ",
-                "هُوَ خِرِّيجٌ مِن جَامِعَةِ دَاتُو كَارَامَا الإِسلَامِيَّةِ الحُكُومِيَّةِ بَالُو",
-                "Dia Alumni UIN Datokarama Palu"
+                "Amplop",
+                "ظَرفٌ",
+                "أَنَا أَخُذُ الظَّرفَ",
+                "Saya mengambil sebuah Amplop"
+            )
+        )
+        listOffice.add(
+            Office(
+                2,
+                "Bendahara",
+                "أَمِينُ الصُندُوقِ",
+                "أَنَا أَختَرُكَ بِأَن تَكُونَ أَمِينَ الصُندُوقِ",
+                "Aku memilihmu untuk menjadi Bendahara"
+            )
+        )
+        listOffice.add(
+            Office(
+                3,
+                "Berangkas",
+                "خَزنَةٌ",
+                "إِحفَظِ الخَزنَةَ !",
+                "Jagalah berangkas itu !"
+            )
+        )
+        listOffice.add(
+            Office(
+                4,
+                "Blangko",
+                " إِستِئمَارَةٌ",
+                "أَينَ وَضَعتَ إِستِئمَارَةَ النَّتِيجَةِ ؟",
+                "Di manakah Kamu menyimpan Blangko Penilaian?"
+            )
+        )
+        listOffice.add(
+            Office(
+                5,
+                "Bos",
+                "زَعِيمٌ",
+                "أَنَا مُستَعِدٌّ يَا زَعِيم !",
+                "Siap Bos !"
+            )
+        )
+        listOffice.add(
+            Office(
+                6,
+                "Dasi",
+                "كَرَافَةٌ",
+                "الكَرَافَةُ طَوِيلَةٌ جِدًا",
+                "Dasi itu panjang sekali"
+            )
+        )
+        listOffice.add(
+            Office(
+                7,
+                "Dinas",
+                "رَسمٌ ، نَوبَةٌ",
+                "أَنَا أَستَعمِلُ المَلَابِسَ الرَّسمِيَّ كُلَّ يَومِ الإِثنَينِ",
+                "Aku memakai Pakaian Dinas setiap hari Senin"
+            )
+        )
+        listOffice.add(
+            Office(
+                8,
+                "Direktur , Pimpinan",
+                "مُدِيرٌ",
+                "أَبِي مُدِيرُ المَعهَدِ الإِستِقَامَةِ نَجَاتَا بَارُو",
+                "Ayahku seorang Pimpinan Pondok Pesantren Al-Istiqamah Ngatabaru"
+            )
+        )
+        listOffice.add(
+            Office(
+                9,
+                "Dokumen, Berkas",
+                "مَلَفٌ",
+                "أَرسِل مَلَفَكَ إِلَيَّ فَورًا",
+                "Kirimkanlah kepadaku berkasmu secepatnya"
+            )
+        )
+        listOffice.add(
+            Office(
+                10,
+                "Gaji",
+                "رَاتِبٌ",
+                "مَا قَبِلتُ رَاتِبِي فِي هذَا الشَّهرِ",
+                "Aku belum menerima Gajiku bulan ini"
+            )
+        )
+        listOffice.add(
+            Office(
+                11,
+                "Honor",
+                "عَوَائِدُ",
+                "هَل تُرِيدُ عَوَائِدِي؟",
+                "Apakah kamu menginginkan Honorku?"
+            )
+        )
+        listOffice.add(
+            Office(
+                12,
+                "Jabatan",
+                "مَنصِبٌ",
+                "رَأَيتُ المَرءَةَ ذَاتَ مَنصِبِ وَ جَمَالِ",
+                "Aku telah melihat Wanita yang memiliki jabatan dan kecantikan"
+            )
+        )
+        listOffice.add(
+            Office(
+                13,
+                "Jam Kantor",
+                "سَاعَةُ الدَّوَامِ",
+                "مَمنُوعُ التَّدخِين فِي سَاعَةِ الدَّوَّامِ",
+                "Dilarang merokok di jam Kantor"
+            )
+        )
+        listOffice.add(
+            Office(
+                14,
+                "Jas Kantor",
+                "كِسَاءُ",
+                "لَا تَنسَ لِتَحمِلَ الكِسَاءَ غَدًا!",
+                "Jangan lupa untuk membawa Jas Kantor besok"
+            )
+        )
+        listOffice.add(
+            Office(
+                15,
+                "Kantor Polisi, Pos",
+                "مَخفَرٌ",
+                "الشّرطَةُ يَحفَظُ فِي المَخفَرِ",
+                "Polisi berjaga di dalam Kantor Polisi/Pos"
+            )
+        )
+        listOffice.add(
+            Office(
+                16,
+                "Kantor Pusat",
+                "مَركَزٌرَئِيسِيّ",
+                "جَاءَت الرِّسَالَةُ مِن مَركَزِرَئِيسِيِّ",
+                "Surat dari Kantor Pusat telah datang"
+            )
+        )
+        listOffice.add(
+            Office(
+                17,
+                "Kemeja",
+                "قَمِيصٌ",
+                "أَستَعمِلُ القَمِيصَ فِي يَومِ الأَربِعَاءِ",
+                "Aku memakai baju kemeja di hari Rabu"
+            )
+        )
+        listOffice.add(
+            Office(
+                18,
+                "Kepala Kantor",
+                "رَئِيسُ الْمَكتَبِ",
+                "زَارَ رَئِيسُ الْمَكتَبِ إِلَى مَكتَبِي",
+                "Kepala Kantor mengunjungi Kantorku"
+            )
+        )
+        listOffice.add(
+            Office(
+                19,
+                "Komputer",
+                "حَاسُوْبٌ",
+                "فَسَدَ الحَاسُوْبُ فِي غُرفَتِي ",
+                "Komputer di ruanganku telah rusak"
+            )
+        )
+        listOffice.add(
+            Office(
+                20,
+                "Kotak Surat",
+                "صُندُوقُ البَرِيدِ",
+                "فَتَحتُ صُندُوقَ البَرِيدِ وَلَم يُوجَد مَا فِيهِ",
+                "Aku telah membuka Kotak Surat dan tidak terdapat apa apa di dalamnya"
+            )
+        )
+        listOffice.add(
+            Office(
+                21,
+                "Laporan",
+                "تَقرِيرٌ",
+                "عَلِّمنِي فِي صِناَعِ التَّقرِيرِ",
+                "Ajarilah aku dalam membuat Laporan"
+            )
+        )
+        listOffice.add(
+            Office(
+                22,
+                "Legalisir",
+                "شَرعِيَّةٌ\n",
+                "دَفَعتُ لِشَرعِيَّةِ الإجَازَةِ / الشَهَادَةِ",
+                "Aku telah membayar untuk Legalisir Ijazah"
+            )
+        )
+        listOffice.add(
+            Office(
+                23,
+                "Lem",
+                "لَصَاقَةٌ",
+                "هَل تَحتَاجُ اللَّصَاقَةَ ؟",
+                "Apakah kamu memerlukan Lem?"
+            )
+        )
+        listOffice.add(
+            Office(
+                24,
+                "Liburan",
+                "عُطلَةٌ",
+                "أَنَا مُشتَاقٌ إِلَى يَومِ العُطلَةِ",
+                "Aku merindukan Hari Libur"
+            )
+        )
+        listOffice.add(
+            Office(
+                25,
+                "Mesin Fotocopy",
+                "نَاسِخَةٌ",
+                "فَسَدَت النَّاسِخَةُ",
+                "Mesin fotokopy telah rusak"
             )
         )
         return listOffice
