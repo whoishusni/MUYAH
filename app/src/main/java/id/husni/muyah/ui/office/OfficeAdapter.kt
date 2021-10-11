@@ -63,7 +63,6 @@ class OfficeAdapter : RecyclerView.Adapter<OfficeAdapter.OfficeViewHolder>() {
         }
 
         override fun onInit(status: Int) {
-            //TODO : Fix TTS ARAB di semua adapter
             val localeArabic = Locale("ar","SA")
             if (status == TextToSpeech.SUCCESS) {
                 val result = textToSpeech?.setLanguage(localeArabic)
