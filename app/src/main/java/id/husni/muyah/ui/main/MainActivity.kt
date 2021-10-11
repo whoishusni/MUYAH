@@ -12,6 +12,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import id.husni.muyah.R
 import id.husni.muyah.databinding.ActivityMainBinding
 import id.husni.muyah.ui.campus.CampusActivity
@@ -26,9 +28,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.cvPopularCat.setOnClickListener {
-            Toast.makeText(this,getString(R.string.feature_not_available), Toast.LENGTH_SHORT).show()
-        }
+        MobileAds.initialize(this){}
+
+        val adRequest = AdRequest.Builder().build()
+        binding.adsBanner.loadAd(adRequest)
 
         binding.cvOffice.setOnClickListener(this)
         binding.cvCampus.setOnClickListener(this)
