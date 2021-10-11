@@ -68,7 +68,7 @@ class HospitalAdapter : RecyclerView.Adapter<HospitalAdapter.ViewHolder>() {
             if (status == TextToSpeech.SUCCESS) {
                 val result = textToSpeech?.setLanguage(localeArabic)
                 if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                    Toast.makeText(binding.root.context, binding.root.context.getString(R.string.error_lang), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(binding.root.context, binding.root.context.getString(R.string.error_lang), Toast.LENGTH_LONG).show()
                 }
                 else{
                     textToSpeech?.speak(binding.tvMean.text.toString(), TextToSpeech.QUEUE_FLUSH, null,null)
