@@ -20,4 +20,7 @@
     <string name="rumah_sakit">Rumah Sakit</string>
     <string name="error_lang">Error: Ganti Text-To-Speech Bawaan Anda dengan Google Text-To-Speech, caranya buka pengaturan -> General Setting -> Text To Speech. dan tambahkan / install bahasa arab</string>
     <string name="feature_not_available">Fitur Ini Belum Tersedia</string>
+    <string name="test_ads">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="unit_ads">ca-app-pub-8778283339841359/3836132297</string>
+    <string name="hasil">Hasil</string>
 </resources>

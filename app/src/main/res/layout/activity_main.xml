@@ -128,7 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 ads:adSize="320x100"
-                ads:adUnitId="ca-app-pub-8778283339841359/3836132297"/>
+                ads:adUnitId="@string/test_ads"/>
         </androidx.cardview.widget.CardView>
 
         <TextView
