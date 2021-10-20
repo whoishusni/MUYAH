@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="7dp"
-                android:text="@string/kata" />
+                android:text="@string/words" />
 
             <TextView
                 android:id="@+id/tvMean"
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="7dp"
-                android:text="@string/arti_kata"/>
+                android:text="@string/word_mean"/>
 
             <TextView
                 android:id="@+id/tvSample"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="7dp"
                 android:maxLines="2"
-                android:text="@string/contoh_kata"/>
+                android:text="@string/word_example"/>
 
             <TextView
                 android:id="@+id/tvSampleMean"
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:maxLines="2"
                 android:textStyle="italic"
-                android:text="@string/arti_kalimat" />
+                android:text="@string/phrase_mean" />
 
             <ImageButton
                 android:id="@+id/btnSpeak"

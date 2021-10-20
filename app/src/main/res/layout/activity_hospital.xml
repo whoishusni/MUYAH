@@ -36,7 +36,7 @@
                 style="@style/detail_text_toolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rumah_sakit" />
+                android:text="@string/hospital" />
 
         </androidx.appcompat.widget.Toolbar>
 

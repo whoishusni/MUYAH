@@ -32,4 +32,6 @@ class MuyahRepository(private val localDataSource: LocalDataSource) {
     suspend fun insertHospital(list: List<Hospital>) = localDataSource.insertHospital(list)
     fun getAllHospital(): LiveData<List<Hospital>> = localDataSource.getAllHospital()
 
+
+
 }

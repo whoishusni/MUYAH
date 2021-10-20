@@ -37,7 +37,7 @@
                 style="@style/detail_text_toolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pasar" />
+                android:text="@string/market" />
 
         </androidx.appcompat.widget.Toolbar>
 

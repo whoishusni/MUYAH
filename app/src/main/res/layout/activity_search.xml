@@ -36,7 +36,7 @@
                 style="@style/detail_text_toolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hasil" />
+                android:text="@string/result" />
 
         </androidx.appcompat.widget.Toolbar>
 

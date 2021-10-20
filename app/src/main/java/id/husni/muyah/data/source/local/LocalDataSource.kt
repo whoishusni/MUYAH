@@ -30,4 +30,6 @@ class LocalDataSource(private val muyahDao: MuyahDao) {
     //hospital
     suspend fun insertHospital(list: List<Hospital>) = muyahDao.insertHospital(list)
     fun getAllHospital(): LiveData<List<Hospital>> = muyahDao.getAllHospital()
+
+
 }
